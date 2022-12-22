@@ -49,7 +49,7 @@ $EmailBody = @"
 										<tbody>
 											<tr style="margin:0; padding:0; border-image-width:0">
 												<td style="margin:0; padding:0; border-image-width:0">
-													<img id="template-img-header" src="https://github.com/stefanobg/email-template-generator/blob/master/assets/header.jpg?raw=true" style="max-width:600px; padding-bottom: 0; border:0; outline:0; text-decoration:none; display:block;">
+													<img id="template-img-header" src="https://github.com/gui-sousa/AD-Pass-Remember/raw/master/src/header-mail-pass.png" style="max-width:600px; padding-bottom: 0; border:0; outline:0; text-decoration:none; display:block;">
 												</td>
 											</tr>
 										</tbody>
@@ -73,7 +73,7 @@ $EmailBody = @"
 													<table style="margin:0; padding:0; border-image-width:0; border:0; border-spacing:0; border-collapse:collapse; margin-top: 12px;">
 														<tbody>
 															<tr style="margin:0; padding:0; border-image-width:0">
-																<td id="template-text" style="text-align: left; color: #717171; font-weight:100; font-size: 18px; min-width: 500px; max-width: 500px;"><p style="margin-top: -18px;"><span style="color: rgb(0, 0, 0);">Olá</span><strong style="color: rgb(0, 0, 0);"> VarNome</strong><span style="color: rgb(0, 0, 0);">!</span></p><p style="margin-top: -18px;"><br></p><p style="margin-top: -18px;"><span style="color: rgb(0, 0, 0);">Passando pra informar que sua senha de acesso ao computador e VPN irá expirar daqui a </span><strong style="color: rgb(0, 0, 0);">VarDias</strong><span style="color: rgb(0, 0, 0);"> em:</span></p><p style="margin-top: -18px;"><br></p><ul><li><strong style="color: rgb(246, 163, 35);">VarData</strong></li></ul><p style="margin-top: -18px;"><br></p><p style="margin-top: -18px;"><span style="color: rgb(0, 0, 0);">Mas não se assuste! <span class="ql-cursor">﻿</span>Defina uma nova senha clicando no botão abaixo 😉</span></p></td>
+																<td id="template-text" style="text-align: left; color: #717171; font-weight:100; font-size: 18px; min-width: 500px; max-width: 500px;"><p style="margin-top: -18px;"><span style="color: rgb(0, 0, 0);">Olá</span><strong style="color: rgb(0, 0, 0);"> VarNome</strong><span style="color: rgb(0, 0, 0);">!</span></p><p style="margin-top: -18px;"><br></p><p style="margin-top: -18px;"><span style="color: rgb(0, 0, 0);">Passando pra informar que sua senha de acesso ao computador e VPN irá expirar daqui a </span><strong style="color: rgb(0, 0, 0);">VarDias dias</strong><span style="color: rgb(0, 0, 0);"> em:</span></p><p style="margin-top: -18px;"><br></p><ul><li><strong style="color: rgb(246, 163, 35);">VarData</strong></li></ul><p style="margin-top: -18px;"><br></p><p style="margin-top: -18px;"><span style="color: rgb(0, 0, 0);">Mas não se assuste! <span class="ql-cursor">﻿</span>Defina uma nova senha clicando no botão abaixo 😉</span></p></td>
 															</tr>
 															<tr><td id="template-button" style="margin-top: 20px;">
 																<table style="min-width:100%;border-collapse:collapse;margin-bottom:-10px;margin-top:40px;" width="100%" cellspacing="0" cellpadding="0" border="0">
@@ -81,7 +81,7 @@ $EmailBody = @"
 																		<tr>
 																			<td style="padding-top:0;padding-right:10px;padding-bottom:10px;padding-left:10px" valign="top" align="center">
 																				<a id="template-button-link" href="https://adfs.bwglab.tk/adfs/portal/updatepassword/" target="_blank" style="text-decoration: none;"> 
-																					<table style="border-collapse:separate!important;border-radius:5px;background-color:#333;padding-right:50px;padding-left:50px;" cellspacing="0" cellpadding="0" border="0">
+																					<table style="border-collapse:separate!important;border-radius:5px;background-color:#95A5A6;padding-right:50px;padding-left:50px;" cellspacing="0" cellpadding="0" border="0">
 																						<tbody>
 																							<tr>
 																								<td style="font-size:16px;padding:16px" valign="middle" align="center">
@@ -109,7 +109,7 @@ $EmailBody = @"
 												<tr style="margin:0; padding:0; border-image-width:0; text-align: center; font-size: 14px; line-height: 140%">
 													<td style="margin:0; padding:0; border-image-width:0">
 														<br><br>
-														<a target="_blank" href="https://github.com/stefanobg/email-template-generator/" style="text-decoration: none; color:#717171; font-weight: 100; font-size:16px">E-mail Template Generator</a> © 2019<br><br><br><br>
+														<a target="_blank" href="https://github.com/stefanobg/email-template-generator/" style="text-decoration: none; color:#717171; font-weight: 100; font-size:16px">infra@bwg.com.br</a><br><br><br><br>
 													</td>
 												</tr>
 											</tbody>
