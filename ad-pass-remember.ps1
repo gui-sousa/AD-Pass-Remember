@@ -13,10 +13,6 @@ $OneDayWarnDate = (get-date).adddays(1).ToLongDateString()
 #Email Variables
 $MailSender = "Segurança da Informação - INFRA BWG <monitoramento@bwg.com.br>"
 $Subject = "Sua senha de rede irá expirar em breve"
-$EmailStub1 = "Olá!"
-$EmailStub2 = "`n`nPassando pra informar que sua senha de acesso ao computador e VPN irá expirar daqui a:"
-$EmailStub3 = "dia(s), na"
-$EmailStub4 = ". `n`nMas não se assuste! Defina uma nova senha acessando:`n"
 $SMTPServer = "aspmx.l.google.com"
 
 #Formato UTF8
@@ -80,12 +76,12 @@ $EmailBody = @"
 																	<tbody>
 																		<tr>
 																			<td style="padding-top:0;padding-right:10px;padding-bottom:10px;padding-left:10px" valign="top" align="center">
-																				<a id="template-button-link" href="https://adfs.bwglab.tk/adfs/portal/updatepassword/" target="_blank" style="text-decoration: none;"> 
+																				<a id="template-button-link" href="VarAdfsLink" target="_blank" style="text-decoration: none;"> 
 																					<table style="border-collapse:separate!important;border-radius:5px;background-color:#95A5A6;padding-right:50px;padding-left:50px;" cellspacing="0" cellpadding="0" border="0">
 																						<tbody>
 																							<tr>
 																								<td style="font-size:16px;padding:16px" valign="middle" align="center">
-																									<a id="template-text-link" href="https://adfs.bwglab.tk/adfs/portal/updatepassword/" style="font-weight:bold;line-height:100%;text-align:center;text-decoration:none;color:#fff;display:block;" target="_blank" data-saferedirecturl="#">ALTERE SUA SENHA</a>
+																									<a id="template-text-link" href="VarAdfsLink" style="font-weight:bold;line-height:100%;text-align:center;text-decoration:none;color:#fff;display:block;" target="_blank" data-saferedirecturl="#">ALTERE SUA SENHA</a>
 																								</td>
 																							</tr>
 																						</tbody>
@@ -119,11 +115,6 @@ $EmailBody = @"
 							</tr>
 						</tbody>
 					</table>
-				
-			
-		
-	
-
 </body></html>
 "@
 
@@ -139,6 +130,7 @@ foreach ($user in $users) {
          $EmailBody = $EmailBody.Replace("VarNome",$user.name)
          $EmailBody = $EmailBody.Replace("VarDias",$days)
          $EmailBody = $EmailBody.Replace("VarData",$SevenDayWarnDate)
+		 $EmailBody = $EmailBody.Replace("VarAdfsLink",$AdfsLink)
 
          Send-MailMessage -To $user.EmailAddress -From $MailSender -SmtpServer $SMTPServer -Port "25" -Subject $Subject -Body $EmailBody -BodyAsHtml -Encoding $encode
      }
@@ -147,6 +139,7 @@ foreach ($user in $users) {
          $EmailBody = $EmailBody.Replace("VarNome",$user.name)
          $EmailBody = $EmailBody.Replace("VarDias",$days)
          $EmailBody = $EmailBody.Replace("VarData",$SevenDayWarnDate)
+		 $EmailBody = $EmailBody.Replace("VarAdfsLink",$AdfsLink)
 
          Send-MailMessage -To $user.EmailAddress -From $MailSender -SmtpServer $SMTPServer -Port "25" -Subject $Subject -Body $EmailBody -BodyAsHtml -Encoding $encode
      }
@@ -155,6 +148,7 @@ foreach ($user in $users) {
          $EmailBody = $EmailBody.Replace("VarNome",$user.name)
          $EmailBody = $EmailBody.Replace("VarDias",$days)
          $EmailBody = $EmailBody.Replace("VarData",$SevenDayWarnDate)
+		 $EmailBody = $EmailBody.Replace("VarAdfsLink",$AdfsLink)
 
          Send-MailMessage -To $user.EmailAddress -From $MailSender -SmtpServer $SMTPServer -Port "25" -Subject $Subject -Body $EmailBody -BodyAsHtml -Encoding $encode
      }
